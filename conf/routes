@@ -10,7 +10,12 @@ GET     /count                      controllers.CountController.count
 GET     /message                    controllers.AsyncController.message
 
 #Generar rutas para el bookstore
-
+GET		/books/						controllers.BookController.index()
+GET		/books/create				controllers.BookController.create()
+GET		/books/edit/:id				controllers.BookController.edit(id: Integer)
+PUT		/books/update				controllers.BookController.update()
+GET		/books/destroy/:id			controllers.BookController.destroy(id: Integer)
+GET		/books/show/:id				controllers.BookController.show(id: Integer)
 
 
 # Map static resources from the /public folder to the /assets URL path
